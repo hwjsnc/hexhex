@@ -1,0 +1,18 @@
+image: archlinux
+packages:
+ - rust
+sources:
+ - https://git.sr.ht/~quf/hexhex
+tasks:
+ - fmt: |
+    cd hexhex
+    cargo fmt --check
+ - clippy: |
+    cd hexhex
+    cargo clippy
+ - test: |
+    cd hexhex
+    cargo test
+ - test-no-default: |
+    cd hexhex
+    cargo test --no-default-features

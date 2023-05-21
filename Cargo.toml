@@ -1,0 +1,8 @@
+[workspace]
+members = ["hexhex", "hexhex_impl", "hexhex_macros"]
+
+#[package]
+##license = [] TBD, maybe EUPL-1.2
+#description = "hexadecimal conversion 🪄"
+#homepage = "https://git.sr.ht/~quf/hexhex" # or https://github.com/hwjsnc/hexhex
+#repository = "https://git.sr.ht/~quf/hexhex"

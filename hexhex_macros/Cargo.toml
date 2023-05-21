@@ -1,0 +1,13 @@
+[package]
+name = "hexhex_macros"
+version = "1.0.0"
+edition = "2021"
+description = "use hexhex instead of this."
+repository = "https://git.sr.ht/~quf/hexhex"
+#license = "" # TBD, maybe EUPL-1.2
+
+[lib]
+proc-macro = true
+
+[dependencies]
+hexhex_impl = { path = "../hexhex_impl", version = "0.1.0",  features = ["std"] }

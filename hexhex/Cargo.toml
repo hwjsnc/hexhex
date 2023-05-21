@@ -1,0 +1,15 @@
+[package]
+name = "hexhex"
+version = "1.0.0"
+description = "hexadecimal conversion 🪄"
+repository = "https://git.sr.ht/~quf/hexhex"
+edition = "2021"
+#license = "" # TBD, maybe EUPL-1.2
+
+[features]
+default = ["std"]
+std = ["hexhex_impl/std"]
+
+[dependencies]
+hexhex_impl = { path = "../hexhex_impl", version = "0.1.0" }
+hexhex_macros = { path = "../hexhex_macros", version = "1.0.0" }

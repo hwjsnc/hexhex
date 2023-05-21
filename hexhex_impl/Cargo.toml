@@ -1,0 +1,18 @@
+[package]
+name = "hexhex_impl"
+version = "0.1.0"
+edition = "2021"
+description = "use hexhex instead of this."
+repository = "https://git.sr.ht/~quf/hexhex"
+#license = "" # TBD, maybe EUPL-1.2
+
+[features]
+default = []
+std = ["fallible-iterator/std"]
+proptest = ["std"]
+
+[dependencies]
+fallible-iterator = { version = "0.2.0", default-features = false }
+
+[dev-dependencies]
+proptest = "1.1.0"
