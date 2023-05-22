@@ -107,6 +107,8 @@ match x {
 
 */
 
+#![forbid(unsafe_code)]
+
 #[cfg(feature = "std")]
 pub use hexhex_impl::{decode, decode_ascii};
 pub use hexhex_impl::{

@@ -1,3 +1,5 @@
+#![forbid(unsafe_code)]
+
 use hexhex_impl::decode;
 use proc_macro::{Literal, TokenStream, TokenTree};
 
