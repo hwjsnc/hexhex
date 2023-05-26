@@ -54,7 +54,7 @@ assert_eq!(bytes, &[0xc0, 0xff, 0xee]);
 
 ## License
 
-TBD
+Licensed under the EUPL-1.2-or-later
 
 ## Contributing
 
