@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 description = "use hexhex instead of this."
 repository = "https://git.sr.ht/~quf/hexhex"
-#license = "" # TBD, maybe EUPL-1.2
+license = "EUPL-1.2"
 
 [features]
 default = []

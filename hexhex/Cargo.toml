@@ -4,7 +4,7 @@ version = "1.0.0"
 description = "hexadecimal conversion 🪄"
 repository = "https://git.sr.ht/~quf/hexhex"
 edition = "2021"
-#license = "" # TBD, maybe EUPL-1.2
+license = "EUPL-1.2"
 
 [features]
 default = ["std"]
