@@ -12,7 +12,7 @@ use proc_macro::{Literal, TokenStream, TokenTree};
 /// assert_eq!(hex_literal!("0123"), &[0x1, 0x23]);
 /// ```
 ///
-/// Malformed inuputs are rejected at compile time
+/// Malformed inputs are rejected at compile time
 ///
 /// ```compile_fail
 /// use hexhex_macros::hex_literal;

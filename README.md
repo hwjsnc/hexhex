@@ -7,7 +7,7 @@ Features:
 - Convert hex `&str` or `&[u8]` to a new byte vector
 - Convert hex `&str` or `&[u8]` to bytes in a preallocated buffer
 - Macro for all your compile-time hex to bytes conversion needs
-- `#![no_std]` support for a subset of the above
+- `#![no_std]` support for a subset of the above (if used with no default features)
 - No runtime panics (except for internal bugs)
 
 ## Encoding
@@ -26,7 +26,7 @@ println!("{}", Hex::new(&bytes).with_prefix(true).with_case(Case::Upper)); // no
 
 ## Encode to String
 
-`Hex` implements the [`core::fmt::Display`] trait, so conversion to string is as easy as:
+`Hex` implements the [`Display`](https://doc.rust-lang.org/stable/core/fmt/trait.Display.html) trait, so conversion to string is as easy as:
 
 ```
 use hexhex::Hex;

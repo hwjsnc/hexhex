@@ -55,7 +55,7 @@ assert_eq!(buf, [0xc0, 0xff, 0xee]);
 ```
 
 There are some other variants, check the list of functions to see them all.
-The `ascii` variants take byte strings (`&[u8]`) which need not be valid ASCII or UTF-8 (however, only valid ASCII can be valid hex strings).
+The `ascii` variants take byte strings (`&[u8]`) which need not contain ASCII or UTF-8 (however, only valid ASCII can be valid hex strings).
 
 ## Decoding (std)
 
