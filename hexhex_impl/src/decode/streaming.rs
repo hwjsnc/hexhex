@@ -66,7 +66,10 @@ where
             Err(e) => return Err(e),
         };
         let Some(v1) = c.to_digit(16) else {
-            return Err(FromHexError { position, kind: FromHexErrorKind::UnexpectedCharacter(c) })
+            return Err(FromHexError {
+                position,
+                kind: FromHexErrorKind::UnexpectedCharacter(c),
+            });
         };
         // read second char
         let (position, c) = match self.iterator.next() {
@@ -80,7 +83,10 @@ where
             Err(e) => return Err(e),
         };
         let Some(v2) = c.to_digit(16) else {
-            return Err(FromHexError { position, kind: FromHexErrorKind::UnexpectedCharacter(c) })
+            return Err(FromHexError {
+                position,
+                kind: FromHexErrorKind::UnexpectedCharacter(c),
+            });
         };
         // Got two hex digits, done
         Ok(Some((v1 * 16 + v2) as u8))
@@ -102,7 +108,10 @@ where
             Err(e) => return Err(e),
         };
         let Some(v1) = (c as char).to_digit(16) else {
-            return Err(FromHexError { position, kind: FromHexErrorKind::UnexpectedByte(c) })
+            return Err(FromHexError {
+                position,
+                kind: FromHexErrorKind::UnexpectedByte(c),
+            });
         };
         // read second char
         let (position, c) = match self.iterator.next() {
@@ -116,7 +125,10 @@ where
             Err(e) => return Err(e),
         };
         let Some(v2) = (c as char).to_digit(16) else {
-            return Err(FromHexError { position, kind: FromHexErrorKind::UnexpectedByte(c) })
+            return Err(FromHexError {
+                position,
+                kind: FromHexErrorKind::UnexpectedByte(c),
+            });
         };
         self.last_position = position;
         // Got two hex digits, done
