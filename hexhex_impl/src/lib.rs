@@ -19,4 +19,4 @@ pub use decode::FromHexError;
 #[cfg(feature = "std")]
 pub use decode::vec::{decode, decode_ascii};
 
-pub use encode::{Case, DisplayOptions, Hex};
+pub use encode::{hex, Case, DisplayOptions, Hex};

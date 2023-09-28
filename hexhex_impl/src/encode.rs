@@ -74,3 +74,8 @@ impl<T> Hex<T> {
         self
     }
 }
+
+/// Shorthand for [`Hex::new`]
+pub fn hex<T: AsRef<[u8]>>(data: T) -> Hex<T> {
+    Hex::new(data)
+}

@@ -11,12 +11,14 @@ use std::vec;
 #[test]
 fn hex_default_empty() {
     let data = [];
+    assert_eq!(hex(data).to_string(), "");
     assert_eq!(Hex::new(data).to_string(), "");
 }
 
 #[test]
 fn hex_default_1() {
     let data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+    assert_eq!(hex(data).to_string(), "0102030405060708090a0b0c0d0e0f");
     assert_eq!(Hex::new(data).to_string(), "0102030405060708090a0b0c0d0e0f");
 }
 
@@ -39,13 +41,14 @@ fn hex_default_2() {
         16 * 14,
         16 * 15,
     ];
+    assert_eq!(hex(data).to_string(), "102030405060708090a0b0c0d0e0f0");
     assert_eq!(Hex::new(data).to_string(), "102030405060708090a0b0c0d0e0f0");
 }
 
 #[test]
 fn hex_default_single_byte() {
     for x in 0u8..=u8::MAX {
-        assert_eq!(Hex::new([x]).to_string(), format!("{x:02x}"));
+        assert_eq!(hex([x]).to_string(), format!("{x:02x}"));
     }
 }
 

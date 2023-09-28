@@ -15,10 +15,12 @@ Features:
 ## Encoding
 
 ```
-use hexhex::Hex;
+use hexhex::hex;
 let bytes = [0xc0, 0xff, 0xee];
-println!("{}", Hex::new(&bytes)); // no allocations, prints "c0ffee"
+println!("{}", hex(&bytes)); // no allocations, prints "c0ffee"
 ```
+
+Or if you want more control:
 
 ```
 use hexhex::{Hex, Case};
@@ -112,7 +114,7 @@ match x {
 #[cfg(feature = "std")]
 pub use hexhex_impl::{decode, decode_ascii};
 pub use hexhex_impl::{
-    decode_ascii_to_buf, decode_ascii_to_buf_exact, decode_to_buf, decode_to_buf_exact, Case,
+    decode_ascii_to_buf, decode_ascii_to_buf_exact, decode_to_buf, decode_to_buf_exact, hex, Case,
     FromHexError, Hex,
 };
 pub use hexhex_macros::*;
