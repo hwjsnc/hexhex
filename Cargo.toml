@@ -1,2 +1,3 @@
 [workspace]
+resolver = "2"
 members = ["hexhex", "hexhex_impl", "hexhex_macros"]
