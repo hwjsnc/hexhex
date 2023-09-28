@@ -1,6 +1,6 @@
 [package]
 name = "hexhex_impl"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "use hexhex instead of this."
 repository = "https://git.sr.ht/~quf/hexhex"

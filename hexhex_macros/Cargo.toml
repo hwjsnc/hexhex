@@ -1,6 +1,6 @@
 [package]
 name = "hexhex_macros"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 description = "use hexhex instead of this."
 repository = "https://git.sr.ht/~quf/hexhex"

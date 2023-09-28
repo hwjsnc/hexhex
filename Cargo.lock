@@ -108,7 +108,7 @@ dependencies = [
 
 [[package]]
 name = "hexhex"
-version = "1.0.0"
+version = "1.1.0"
 dependencies = [
  "hexhex_impl",
  "hexhex_macros",
@@ -116,7 +116,7 @@ dependencies = [
 
 [[package]]
 name = "hexhex_impl"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "fallible-iterator",
  "proptest",
@@ -124,7 +124,7 @@ dependencies = [
 
 [[package]]
 name = "hexhex_macros"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
  "hexhex_impl",
 ]
