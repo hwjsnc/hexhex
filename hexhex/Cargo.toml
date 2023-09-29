@@ -1,6 +1,6 @@
 [package]
 name = "hexhex"
-version = "1.1.0"
+version = "1.1.1"
 description = "hexadecimal conversion 🪄"
 repository = "https://git.sr.ht/~quf/hexhex"
 edition = "2021"
